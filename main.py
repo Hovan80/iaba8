@@ -1,6 +1,7 @@
 import flet as ft
 from image_control import ImageControl
 from report import ReportWindow
+from material_select import MaterialSelect
 
 class MainWindow(ft.UserControl):
     def build(self):
@@ -13,7 +14,8 @@ class MainWindow(ft.UserControl):
             run_spacing=5,
             controls=[
                 ImageControl(),
-                ReportWindow()
+                ReportWindow(),
+                MaterialSelect()
             ]
         )
     
